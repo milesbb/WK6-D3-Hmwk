@@ -10,9 +10,481 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <style>
+      .jumbotron {
+        background-image: url("images/plane.gif");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .backgif {
+        background-image: url("images/plane.gif");
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* @keyframes scroll {
+        from {
+          transform: translate(0, 0);
+        }
+
+        to {
+          transform: translate(-300px, 0);
+        }
+      }
+
+      .resultMarquee {
+        animation: scroll 7s linear 0s infinite;
+        position: absolute;
+      } */
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <img
+        class="d-block mx-auto img-responsive"
+        src="images/Best-Travel-Agent-Logos-and-How-to-Make-Your-Own-image29.png"
+        width="170rem"
+      />
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#navbarSupportedContent"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dotw">Deals of the Week</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sumdest">Welcome Summer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dotd">Deal of the Day</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lastmin">Last Minute</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Reviews</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- jumbotron -->
+    <div id="jumbo" class="jumbotron text-white">
+      <h1 class="display-4">Bag great travel bargains today!</h1>
+      <p class="lead">
+        Cobblestone's market researchers work hard daily to bring you the best
+        travel deals on the market
+      </p>
+      <br>
+      <p class="resultMarquee">
+        Malaga £20 | Majorca £13 | Buenos Aires £74 | Santander £12 | Florence
+        £20 | Venice £15 | Berlin £20 | Paris £12 | Copenhagen £21
+      </p>
+    </div>
+
+    <!-- Deal of the Week destination grid -->
+    <h2 id="dotw" class="text-center my-5">Deals of the Week</h2>
+    <div class="container px-4">
+      <div class="row justify-content-center text-center gx-3 gy-3">
+        <div class="card col-xl-3 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/florence.jpeg"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Florence</h5>
+            <p class="card-text">
+              A lovely Summer stroll through one of the beating cultural hearts of Italy
+            </p>
+            <a href="#" class="btn btn-primary">Go to Florence</a>
+          </div>
+        </div>
+
+        <div class="card col-xl-3 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/london.jpeg"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">London</h5>
+            <p class="card-text">
+              Experience amazing food, culture, and entertainment in this European mega-city
+            </p>
+            <a href="#" class="btn btn-primary">Go to London</a>
+          </div>
+        </div>
+
+        <div class="card col-xl-3 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/malaga.jpeg"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Malaga</h5>
+            <p class="card-text">
+              Europe's party city. Kick back and relax or crack open the beers and get partying!
+            </p>
+            <a href="#" class="btn btn-primary">Go to Malaga</a>
+          </div>
+        </div>
+
+        <div class="card col-xl-3 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/zurich.jpeg"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Zurich</h5>
+            <p class="card-text">
+              Do you prefer having an empty wallet? Well then visit here and become destitute!
+            </p>
+            <a href="#" class="btn btn-primary">Go to Zurich</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome Summer destination grid -->
+    <h2 id="sumdest" class="text-center my-5">Welcome Summer!</h2>
+    <div class="container px-4 shadow-lg p-3 mb-5 bg-white rounded">
+      <div class="row justify-content-center text-center gx-3 gy-3">
+        <div class="card col-xl-2 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/athens.webp"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Athens</h5>
+            <a href="#" class="btn btn-primary">Visit Athens</a>
+          </div>
+        </div>
+
+        <div class="card col-xl-2 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/grand canaria.webp"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Grand Canaria</h5>
+            <a href="#" class="btn btn-primary">Visit G. Canaria</a>
+          </div>
+        </div>
+
+        <div class="card col-xl-2 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/marseille.jpeg"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Marseille</h5>
+            <a href="#" class="btn btn-primary">Visit Marseille</a>
+          </div>
+        </div>
+
+        <div class="card col-xl-2 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/palermo.jpeg"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Palermo</h5>
+            <a href="#" class="btn btn-primary">Visit Palermo</a>
+          </div>
+        </div>
+
+        <div class="card col-xl-2 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/santander.jpeg"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Santander</h5>
+            <a href="#" class="btn btn-primary">Visit Santander</a>
+          </div>
+        </div>
+
+        <div class="card col-xl-2 col-md-4 col-sm-6 px-0" style="width: 16rem">
+          <img
+            src="images/destpics/dubrovnik.jpeg"
+            class="card-img-top img-fluid"
+            style="height: 10rem"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Dubrovnik</h5>
+            <a href="#" class="btn btn-primary">Visit Dubrovnik</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deal of the Day -->
+    <h2
+      id="dotd"
+      class="text-center d-none d-sm-none d-md-block d-xl-block my-5"
+    >
+      Deal of the Day
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 d-none d-sm-none d-md-block d-xl-block">
+          <figure class="figure">
+            <img
+              src="images/destpics/copenhagen.jpeg"
+              class="figure-img img-fluid rounded"
+              alt="A generic square placeholder image with rounded corners in a figure."
+            />
+            <figcaption class="figure-caption text-right">
+              Don't those boats look inviting...
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="col-xl-4 d-none d-sm-none d-md-block d-xl-block align-items-center"
+        >
+          <h2>Wonderful, Wonderful Copenhagen...</h2>
+          <p>
+            Danes rank among the world's most happy people. In Copenhagen and
+            the beautiful surrounding region, you'll learn why.
+          </p>
+          <p>
+            The buzzing capital mixes royal history, modern architecture and
+            loads of culture with sustainable living and a mouthwatering
+            restaurant scene. Get to know Copenhagen through this amazing offer!
+          </p>
+          <p class="font-weight-bold">£18 per person</p>
+          <p class="font-weight-bold">12/08/23 - 20/08/23</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- last minute -->
+    <div class="backgif">
+      <h2 id="lastmin" class="text-center my-5 text-white pt-5">Last Minute</h2>
+      <div class="container px-4 pb-5">
+        <div class="row justify-content-center text-center gx-3 gy-3">
+          <div class="card rounded-circle mx-2 col-xl-2 col-md-4 col-sm-6 px-0 border-dark">
+            <img
+              src="images/destpics/florence.jpeg"
+              class="rounded-circle card-img-top img-fluid overflow-hidden"
+              style="width: 100%; height: 8rem"
+              alt="..."
+            />
+          </div>
+          <div class="mx-2 rounded-circle card col-xl-2 col-md-4 col-sm-6 px-0 border-dark">
+            <img
+              src="images/destpics/santander.jpeg"
+              class="rounded-circle card-img-top img-fluid overflow-hidden"
+              style="width: 100%; height: 8rem"
+              alt="..."
+            />
+          </div>
+          <div class="mx-2 rounded-circle card col-xl-2 col-md-4 col-sm-6 px-0 border-dark">
+            <img
+              src="images/destpics/marseille.jpeg"
+              class="rounded-circle card-img-top img-fluid overflow-hidden"
+              style="width: 100%; height: 8rem"
+              alt="..."
+            />
+          </div>
+          <div class="mx-2 rounded-circle card col-xl-2 col-md-4 col-sm-6 px-0 border-dark">
+            <img
+              src="images/destpics/zurich.jpeg"
+              class="rounded-circle card-img-top img-fluid overflow-hidden"
+              style="width: 100%; height: 8rem"
+              alt="..."
+            />
+          </div>
+          <div class="mx-2 rounded-circle card col-xl-2 col-md-4 col-sm-6 px-0 border-dark">
+            <img
+              src="images/destpics/athens.webp"
+              class="rounded-circle card-img-top img-fluid overflow-hidden"
+              style="width: 100%; height: 8rem"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonials -->
+
+    <section class="mb-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-xl-8 text-center">
+          <h2 id="testimonials" class="text-center my-5">Reviews</h2>
+          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+            Now obviously we can't pat ourselves on the back all day, see what
+            our previous customers have said about our services!
+          </p>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-4 mb-5 mb-md-0">
+          <div class="d-flex justify-content-center mb-4">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+              class="rounded-circle shadow-1-strong"
+              width="150"
+              height="150"
+            />
+          </div>
+          <h5 class="mb-3">Maria Smantha</h5>
+          <h6 class="text-primary mb-3">Milan, 2 weeks</h6>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>Truly a life-changing trip,
+            everything was taken care of and all I had to worry about was
+            figuring out how to hold three margaritas at the same time!
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-5 mb-md-0">
+          <div class="d-flex justify-content-center mb-4">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+              class="rounded-circle shadow-1-strong"
+              width="150"
+              height="150"
+            />
+          </div>
+          <h5 class="mb-3">Lisa Cudrow</h5>
+          <h6 class="text-primary mb-3">Bordeaux, 1 week</h6>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>Amazing experience, definitely
+            would do again. If you need a week away all taken care of, these are
+            your guys.
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-0">
+          <div class="d-flex justify-content-center mb-4">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+              class="rounded-circle shadow-1-strong"
+              width="150"
+              height="150"
+            />
+          </div>
+          <h5 class="mb-3">John Smith</h5>
+          <h6 class="text-primary mb-3">Warsaw, 3 weeks</h6>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>Have never experience this
+            level of service before at this price point. 100% Recommend to
+            anyone looking for an amazing holiday.
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="far fa-star fa-sm text-warning"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+
+    <!-- footer -->
+    <footer class="bg-dark text-center text-white fixed-bottom">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Contact Us:
+        <a class="text-white" href="https://mdbootstrap.com/"
+          >faketravelagency@fake.com</a
+        >
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
